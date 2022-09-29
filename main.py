@@ -241,7 +241,10 @@ print("To apply, you need to know how to program in Python and speak French")
 names = ['John', 'Ann', 'Chad', 'Lee']
 for items in names:
   print("Hello" + item)
-my_list = ['a']
+my_list = ['a','b', 'c', 'd']
+for letter in my_list:
+  letter_number = my_list.index(letter) + 1
+  print(f"letter{letter_number}: {letter}")
 
 # For Loops Practice #1
 # Using For loops, greet all members of a class, printing "Hello" + their name.
