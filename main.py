@@ -109,8 +109,44 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 
 ########################################decision making in python#####################################
 
+if 5 == 2:
+  print("it is correct")
+else:
+  print("it is not correct")
 
+pet = "dog"
+if pet == "cat":
+  print("you have a cat")
+elif pet == "dog":
+  print("you have a dog")
+else:
+  print("i dont know what animal you have")
 
+age = 16
+schoolGrade = 9
+if age < 18: 
+  print("you are a minor")
+  if schoolGrade >= 7:
+    print("passed")
+  else: 
+    print("failed")
+else:
+  print("you are an adult")
+
+input("enter your name: ")
+input("enter your relatives name: ")
+age = int(input("enter your age: "))
+
+if age < 20:
+  print("i am young")
+elif age < 30: 
+  print("i am vicenarian")
+elif age < 40:
+  print("i am tricenerian")
+elif age < 50:
+  print("i am quadragenerian")
+else:
+  print("i am old")
 # Decision Making Practice #1
 # Using the variables num1 and num2, which are fed with user input (just like in the provided code), create a flow control structure that compares the values of the variables, and returns a result according to the case:
 
@@ -143,12 +179,12 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 # Use the code base already provided to set up the appropriate flow control structure and check those conditions.
 age = 16
 has_license = False
-
-"You can drive"
-
-"You can't drive yet. You must be 18 years old and have a license"
-
-"You can't drive. You need to have a license"
+if age >= 18:
+  print("You can drive")
+if age < 18:
+ print("You can't drive yet. You must be 18 years old and have a license")
+else:
+ print("You can't drive. You need to have a license")
 
 # Decision Making Practice #3
 # To access a certain job, the candidate must be able to program in Python and speak French.
@@ -171,7 +207,7 @@ knows_python = False
 
 "You meet the requirements to apply"
 
-"To apply, you need to know how to program in Python and speak French"
+print("To apply, you need to know how to program in Python and speak French")
 
 "To apply, you need to speak French"
 
@@ -202,6 +238,10 @@ knows_python = False
 #what is iteration?
 #what are for loops?
 
+names = ['John', 'Ann', 'Chad', 'Lee']
+for items in names:
+  print("Hello" + item)
+my_list = ['a']
 
 # For Loops Practice #1
 # Using For loops, greet all members of a class, printing "Hello" + their name.
